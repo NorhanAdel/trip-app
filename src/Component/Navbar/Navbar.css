@@ -1,0 +1,117 @@
+.header{
+position: fixed;
+display: flex;
+ width: 100%;
+align-items: center;
+justify-content: space-between;
+background: transparent;
+padding: 1rem;
+z-index: 1000;
+ 
+transition: .3s;
+}
+.logo h1{
+ color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+.header i{
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+.headerbtn .btn a{
+    color: #fff;
+  }
+  .loginbtn {
+    background:none ;
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+}
+.btn.loginbtn a{
+    color:var(--primary-color);
+}
+    .navbar{
+ padding-right: 3rem;
+}
+.navbar ul li a{
+    margin-right: 20px;
+    color: #fff;
+    transition: .3s;
+}
+.navbar ul li a:hover{
+   color: var(--primary-color);
+}
+.loginbtn{
+    margin-right: 20px;
+}
+.toggleNavbar,.closeNavbar{
+    display: none;
+}
+.activeHeader{
+    background: var(--textcolor);
+    box-shadow: 0px 2px 8px 2px rgba(178,178, 178, .9);
+}
+@media(max-width:768px){
+    .navbar{
+        background:var(--grey-bg);
+        position: absolute;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        left: -120%;
+        top: 0;
+        box-shadow: 0 2px 4px rgba(209,209, 209, .9);
+        transition: .5s ease;
+        z-index: 1000;
+    }
+    .navlist{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .navlist li{
+        padding: 1rem 0;
+    }
+    .toggleNavbar{
+        left: 90%;
+        position: absolute;
+        display: block;
+    }
+    .navlist li a{
+        color: var(--textcolor);
+        font-size: .9rem;
+        font-weight: 600;
+        }
+        .navlist li a:hover{
+            color: var(--primary-color);
+      
+            }
+            .headerbtn{
+                flex-direction: column;
+            }
+            .headerbtn .btn{
+                margin-top: 1rem;
+            }
+           
+            .loginbtn {
+                background:none ;
+                border: 1px solid var(--primary-color);
+                color:var(--primary-color);
+            }
+           .btn.loginbtn a{
+                color:var(--primary-color);
+            }
+            .closeNavbar{
+            position: absolute;
+            top: 1rem;
+            left: 90%;
+            display: block;
+            }
+            .activebar{
+                left: -30px;
+            }
+}
